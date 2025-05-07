@@ -1,0 +1,46 @@
+@use 'scss/reset';
+
+@font-face {
+    font-family: "Inter";
+    src:
+        url(".././fonts/Inter24pt-Medium.woff2") format("woff2")
+}
+
+:root {
+    font-family: "inter", sans-serif;
+}
+
+body {
+    position: relative;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding-inline: 10px;
+
+    &__menu {
+        min-width: 600px;
+        margin-left: auto;
+
+        &--list {
+            display: flex;
+            justify-content: space-between;
+
+        }
+    }
+}
+
+.hero {
+    position: relative;
+    background-image: url(../img/hero/Hero.jpg);
+    height: 690px;
+    background-repeat:no-repeat;
+    background-size:cover;
+
+    &__baner {
+        position: fixed;
+    }
+}

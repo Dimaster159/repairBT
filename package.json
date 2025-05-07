@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "sass-watch": "sass --watch ./src"
+    "sass-watch": "sass --watch ."
   },
   "dependencies": {
     "sass": "^1.87.0"
