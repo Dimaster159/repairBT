@@ -10,9 +10,7 @@
     font-family: "inter", sans-serif;
 }
 
-body {
-    position: relative;
-}
+body {}
 
 .header {
     display: flex;
@@ -33,14 +31,61 @@ body {
     }
 }
 
+
+
 .hero {
     position: relative;
     background-image: url(../img/hero/Hero.jpg);
     height: 690px;
-    background-repeat:no-repeat;
-    background-size:cover;
+    background-repeat: no-repeat;
+    background-size: cover;
 
-    &__baner {
-        position: fixed;
+    &__banner {
+        position: absolute;
+        top: 119px;
+        width: 530px;
+        height: 470px;
+        background-color: #fff;
+        border-radius: 30px;
     }
+}
+
+.banner {
+
+    &__title {
+        margin: 30px 60px 20px 60px;
+        line-height: 50px;
+        font-weight: 600;
+        font-size: 48px;
+    }
+
+    &__list {
+        position: relative;
+    }
+
+    &__item {
+        display: flex;
+        font-size: 18px;
+        align-items: center;
+        margin-left: 60px;
+        margin-bottom: 17px;
+
+    }
+
+    &__marker {
+        margin-right: 10px;
+    }
+
+    &__button {
+        margin-left: 60px;
+        margin-top: 15px;
+    }
+}
+
+.button {
+    background-color: #009999;
+    padding-inline: 30px;
+    padding-block: 15px;
+    color: #fff;
+    border-radius: 5px;
 }

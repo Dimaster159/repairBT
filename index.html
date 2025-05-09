@@ -27,17 +27,56 @@
     </header>
     <main class="main">
         <section class="hero">
-            <!-- <img src="./src/img/hero/Hero.jpg" srcset="./src/img/hero/Hero@2x.jpg 2x" alt="Фоновая картинка, с изображением мастера по ремонту бытовой техники"/> -->
-            <article class="hero__banner banner container">
-                <h1 class="banner__title">Ремонт бытовой техники в Уфе в тот же день</h1>
-                <ul class="banner__list">
-                    <li class="banner__item">Мнгновенный выезд</li>
-                    <li class="banner__item">Оперативная диагностика</li>
-                    <li class="banner__item">Гарантия до 2-х лет</li>
-                    <li class="banner__item">Большой опыт работы</li>
-                </ul>
-                <button class="banner__button">Заказать диагностику</button>
+            <div class="container">
+                <article class="hero__banner banner">
+                    <h1 class="banner__title">Ремонт бытовой техники в Уфе в тот же день</h1>
+                    <div class="banner__item">
+                        <img class="banner__marker" src="./src/icons/checklist.png" alt="">
+                        <p class="banner__p">Мнгновенный выезд</p>
+                    </div>
+                    <div class="banner__item">
+                        <img class="banner__marker" src="./src/icons/checklist.png" alt="">
+                        <p class="banner__p">Оперативная диагностика</p>
+                    </div>
+                    <div class="banner__item">
+                        <img class="banner__marker" src="./src/icons/checklist.png" alt="">
+                        <p class="banner__p">Гарантия до 2-х лет</p>
+                    </div>
+                    <div class="banner__item">
+                        <img class="banner__marker" src="./src/icons/checklist.png" alt="">
+                        <p class="banner__p">Большой опыт работы</p>
+                    </div>
+                    <button class="banner__button button">Заказать диагностику</button>
+                </article>
+            </div>
+        </section>
+        <section class="about container">
+            <h2 class="about__title">О нас</h2>
+            <p class="about__desc">Мы предлагаем разнообразные бытовые и коммерческие услуги: ремонт бытовой техники,
+                обслуживание, установка любой модели. Наш круглосуточный колл-центр обеспечивает помощь в экстренных
+                случаях. Запишитесь сейчас на быструю помощь на пороге!</p>
+            <article class="about__advantages">
+                <div class="advantages">
+                    <img src="./src/icons/advantages1.png" alt="" class="advantages__logo" width="52px" height="52px">
+                    <h2 class="advantages__title">Прозрачность</h2>
+                    <p class="advantages__desc">Мы на 100% прозрачны. Больше никаких дополнительных счетов за
+                        «дополнительные услуги». С нами вы всегда будете точно знать, сколько будет стоить ремонт.</p>
+                </div>
+                <div class="advantages">
+                    <img src="./src/icons/advantages2.png" alt="" class="advantages__logo" width="52px" height="52px">
+                    <h2 class="advantages__title">Полная гарантия</h2>
+                    <p class="advantages__desc">С больше 10 годами опыта в ремонте бытовой техники Вы можете быть
+                        уверены в конечном результате. Кроме того, на каждый ремонт предоставляется от 6-ти месяцев
+                        гарантия.</p>
+                </div>
+                <div class="advantages">
+                    <img src="./src/icons/advantages3.png" alt="" class="advantages__logo" width="52px" height="52px">
+                    <h2 class="advantages__title">Лицензированные специалисты</h2>
+                    <p class="advantages__desc">Наши специалисты умеют работать с бытовой техникой любого типа и
+                        производителя. Имеем все необходимые инструменты.</p>
+                </div>
             </article>
+            <button class="advantages__button button">Заказать диагностику</button>
         </section>
     </main>
 </body>

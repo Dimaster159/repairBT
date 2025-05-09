@@ -99,10 +99,6 @@ legend {
   font-family: "inter", sans-serif;
 }
 
-body {
-  position: relative;
-}
-
 .header {
   display: flex;
   justify-content: space-between;
@@ -126,8 +122,45 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.hero__baner {
-  position: fixed;
+.hero__banner {
+  position: absolute;
+  top: 119px;
+  width: 530px;
+  height: 470px;
+  background-color: #fff;
+  border-radius: 30px;
+}
+
+.banner__title {
+  margin: 30px 60px 20px 60px;
+  line-height: 50px;
+  font-weight: 600;
+  font-size: 48px;
+}
+.banner__list {
+  position: relative;
+}
+.banner__item {
+  display: flex;
+  font-size: 18px;
+  align-items: center;
+  margin-left: 60px;
+  margin-bottom: 17px;
+}
+.banner__marker {
+  margin-right: 10px;
+}
+.banner__button {
+  margin-left: 60px;
+  margin-top: 15px;
+}
+
+.button {
+  background-color: #009999;
+  padding-inline: 30px;
+  padding-block: 15px;
+  color: #fff;
+  border-radius: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */
