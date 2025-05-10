@@ -2,6 +2,7 @@
 .container {
   max-width: 1240px;
   margin-inline: auto;
+  position: relative;
 }
 
 * {
@@ -99,6 +100,14 @@ legend {
   font-family: "inter", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+.main {
+  position: relative;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -123,6 +132,7 @@ legend {
   background-size: cover;
 }
 .hero__banner {
+  padding-top: 35px;
   position: absolute;
   top: 119px;
   width: 530px;
@@ -130,12 +140,19 @@ legend {
   background-color: #fff;
   border-radius: 30px;
 }
+.hero__banner_right {
+  right: 0;
+}
 
 .banner__title {
-  margin: 30px 60px 20px 60px;
+  margin: 0 60px 20px 60px;
   line-height: 50px;
   font-weight: 600;
   font-size: 48px;
+}
+.banner__desc {
+  margin-inline: 60px;
+  margin-bottom: 25px;
 }
 .banner__list {
   position: relative;
@@ -154,6 +171,10 @@ legend {
   margin-left: 60px;
   margin-top: 15px;
 }
+.banner_right {
+  position: absolute;
+  right: 0px;
+}
 
 .button {
   background-color: #009999;
@@ -163,4 +184,162 @@ legend {
   border-radius: 5px;
 }
 
-/*# sourceMappingURL=style.css.map */
+.about {
+  margin-top: 100px;
+}
+.about__title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+}
+.about__desc {
+  text-align: center;
+  font-size: 18px;
+  padding-block: 30px;
+}
+.about__advantages {
+  display: grid;
+  text-align: center;
+  margin-bottom: 90px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.advantages__title {
+  padding-block: 20px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.advantages__button {
+  display: block;
+  margin-inline: auto;
+}
+.advantages__hero {
+  margin-top: 150px;
+  background-image: url(../img/hero/Hero2.jpg);
+}
+
+.banner_right {
+  right: 0;
+}
+
+.service {
+  padding-top: 150px;
+  width: 950px;
+  margin-inline: auto;
+}
+.service__title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+}
+.service__desc {
+  font-size: 18px;
+  margin-block: 30px;
+  text-align: center;
+}
+
+.types-of-services {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: stretch;
+  justify-content: center;
+  row-gap: 30px;
+}
+.types-of-services__logo {
+  text-align: center;
+}
+
+.circle {
+  width: 195px;
+  height: 195px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: -97px;
+}
+
+.line {
+  width: 165px;
+  height: 2px;
+  background-color: #fff;
+}
+
+.sign-up {
+  margin-top: 140px;
+  background-color: #FFAB00;
+  color: #fff;
+  text-align: center;
+}
+.sign-up__wrapper {
+  display: flex;
+  justify-content: center;
+}
+.sign-up__logo {
+  max-width: 100%;
+  position: absolute;
+  padding-inline: auto;
+  top: -90px;
+}
+.sign-up__header {
+  margin-inline: auto;
+  padding-top: 160px;
+  width: 895px;
+}
+.sign-up__title {
+  font-size: 40px;
+  font-weight: 600;
+  padding-bottom: 30px;
+}
+.sign-up__desc {
+  font-size: 18px;
+  padding-bottom: 60px;
+}
+
+.appliance__logos {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-bottom: 20px;
+  padding-inline: 55px;
+}
+.appliance__logo {
+  display: block;
+}
+.appliance__items {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(4, 270px);
+  padding-bottom: 60px;
+}
+.appliance__title {
+  font-size: 18px;
+  font-weight: 600;
+  padding-bottom: 15px;
+}
+.reviews {
+  margin-block: 130px;
+}
+
+.testimonials {
+  margin-bottom: 60px;
+  text-align: center;
+}
+.testimonials .testimonials__title {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.testimonials .testimonials__desc {
+  font-size: 18px;
+  width: 600px;
+  margin-inline: auto;
+}
+
+.rewieves {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 50px;
+}
+.rewieves .rewievs__item {
+  box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.1);
+}/*# sourceMappingURL=style.css.map */

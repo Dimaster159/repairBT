@@ -19,7 +19,7 @@
             <ul class="header__menu--list">
                 <li class="header__menu--item"><a href="#about">O нас</a></li>
                 <li class="header__menu--item"><a href="#service">Услуги</a></li>
-                <li class="header__menu--item"><a href="#sign_up">Записаться</a></li>
+                <li class="header__menu--item"><a href="#sign_up">Как записаться</a></li>
                 <li class="header__menu--item"><a href="#reviews">Отзывы</a></li>
                 <li class="header__menu--item"><a href="#contacts">Контакты</a></li>
             </ul>
@@ -28,48 +28,51 @@
     <main class="main">
         <section class="hero">
             <div class="container">
-                <article class="hero__banner banner">
-                    <h1 class="banner__title">Ремонт бытовой техники в Уфе в тот же день</h1>
-                    <div class="banner__item">
-                        <img class="banner__marker" src="./src/icons/checklist.png" alt="">
-                        <p class="banner__p">Мнгновенный выезд</p>
+                <article class="hero__banner">
+                    <div class="banner">
+                        <h1 class="banner__title">Ремонт бытовой техники в Уфе в тот же день</h1>
+                        <div class="banner__item">
+                            <img class="banner__marker" src="./src/icons/checklist.png" alt="">
+                            <p class="banner__p">Мнгновенный выезд</p>
+                        </div>
+                        <div class="banner__item">
+                            <img class="banner__marker" src="./src/icons/checklist.png" alt="">
+                            <p class="banner__p">Оперативная диагностика</p>
+                        </div>
+                        <div class="banner__item">
+                            <img class="banner__marker" src="./src/icons/checklist.png" alt="">
+                            <p class="banner__p">Гарантия до 2-х лет</p>
+                        </div>
+                        <div class="banner__item">
+                            <img class="banner__marker" src="./src/icons/checklist.png" alt="">
+                            <p class="banner__p">Большой опыт работы</p>
+                        </div>
+                        <button class="banner__button button">Заказать диагностику</button>
                     </div>
-                    <div class="banner__item">
-                        <img class="banner__marker" src="./src/icons/checklist.png" alt="">
-                        <p class="banner__p">Оперативная диагностика</p>
-                    </div>
-                    <div class="banner__item">
-                        <img class="banner__marker" src="./src/icons/checklist.png" alt="">
-                        <p class="banner__p">Гарантия до 2-х лет</p>
-                    </div>
-                    <div class="banner__item">
-                        <img class="banner__marker" src="./src/icons/checklist.png" alt="">
-                        <p class="banner__p">Большой опыт работы</p>
-                    </div>
-                    <button class="banner__button button">Заказать диагностику</button>
                 </article>
             </div>
         </section>
-        <section class="about container">
+        <section class="about container" id="about">
             <h2 class="about__title">О нас</h2>
             <p class="about__desc">Мы предлагаем разнообразные бытовые и коммерческие услуги: ремонт бытовой техники,
                 обслуживание, установка любой модели. Наш круглосуточный колл-центр обеспечивает помощь в экстренных
                 случаях. Запишитесь сейчас на быструю помощь на пороге!</p>
             <article class="about__advantages">
-                <div class="advantages">
+                <div class="advantages__item">
                     <img src="./src/icons/advantages1.png" alt="" class="advantages__logo" width="52px" height="52px">
                     <h2 class="advantages__title">Прозрачность</h2>
-                    <p class="advantages__desc">Мы на 100% прозрачны. Больше никаких дополнительных счетов за
-                        «дополнительные услуги». С нами вы всегда будете точно знать, сколько будет стоить ремонт.</p>
+                    <p class="advantages__desc">Мы на 100% прозрачны. <b> Больше никаких дополнительных счетов за
+                            «дополнительные услуги».</b> С нами вы всегда будете точно знать, сколько будет стоить
+                        ремонт.</p>
                 </div>
-                <div class="advantages">
+                <div class="advantages__item">
                     <img src="./src/icons/advantages2.png" alt="" class="advantages__logo" width="52px" height="52px">
                     <h2 class="advantages__title">Полная гарантия</h2>
-                    <p class="advantages__desc">С больше 10 годами опыта в ремонте бытовой техники Вы можете быть
+                    <p class="advantages__desc">С больше 10-ю годами опыта в ремонте бытовой техники Вы можете быть
                         уверены в конечном результате. Кроме того, на каждый ремонт предоставляется от 6-ти месяцев
                         гарантия.</p>
                 </div>
-                <div class="advantages">
+                <div class="advantages__item">
                     <img src="./src/icons/advantages3.png" alt="" class="advantages__logo" width="52px" height="52px">
                     <h2 class="advantages__title">Лицензированные специалисты</h2>
                     <p class="advantages__desc">Наши специалисты умеют работать с бытовой техникой любого типа и
@@ -78,7 +81,136 @@
             </article>
             <button class="advantages__button button">Заказать диагностику</button>
         </section>
+        <section class="advantages__hero hero">
+            <div class="container">
+                <article class="hero__banner  hero__banner_right">
+                    <div class="banner">
+                        <h1 class="banner__title">Качественный ремонт бытовой техники</h1>
+                        <p class="banner__desc">Мы ремонтируем широкий спектр бытовой техники и обеспечиваем ее
+                            бесперебойную
+                            работу после установки, обслуживания и ремонта. Все наши специалисты прошли обучение и имеют
+                            сертификаты на предоставление услуг по ремонту бытовой техники</p>
+                        <button class="banner__button button">Заказать диагностику</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="service" id="service">
+            <div class="container">
+                <h2 class="service__title">Наши услуги</h2>
+                <p class="service__desc">Поломка бытовой техники может заставить вас отказаться от запланированных дел и
+                    стать причиной ужасного беспорядка на кухне или в ванной. К счастью, у вас есть надежные помощники!
+                </p>
+                <div class="types-of-services">
+                    <div class="types-of-services__logo">
+                        <img src="./src/img/Services/1.png" alt="" width="155px" height="160px">
+                    </div>
+                    <div class="types-of-services__logo">
+                        <img src="./src/img/Services/2.png" alt="" width="155px" height="160px">
+                    </div>
+                    <div class="types-of-services__logo">
+                        <img src="./src/img/Services/3.png" alt="" width="155px" height="160px">
+                    </div>
+                    <div class="types-of-services__logo">
+                        <img src="./src/img/Services/4.png" alt="" width="155px" height="160px">
+                    </div>
+                    <div class="types-of-services__logo">
+                        <img src="./src/img/Services/5.png" alt="" width="155px" height="160px">
+                    </div>
+                    <div class="types-of-services__logo">
+                        <img src="./src/img/Services/6.png" alt="" width="155px" height="160px">
+                    </div>
+                    <div class="types-of-services__logo">
+                        <img src="./src/img/Services/7.png" alt="" width="155px" height="160px">
+                    </div>
+                    <div class="types-of-services__logo">
+                        <img src="./src/img/Services/8.png" alt="" width="155px" height="160px">
+                    </div>
+                    <div class="types-of-services__logo">
+                        <img src="./src/img/Services/9.png" alt="" width="155px" height="160px">
+                    </div>
+                    <div class="types-of-services__logo">
+                        <img src="./src/img/Services/10.png" alt="" width="155px" height="160px">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sign-up" id="sign_up">
+            <div class="container">
+                <div class="sign-up__wrapper">
+                    <div class="circle"></div>
+                    <img src="./src/icons/favicon.png" alt="" width="180px" height="180px" class="sign-up__logo">
+                </div>
+                <div class="sign-up__header">
+                    <h3 class="sign-up__title">Вы платите только за выполненную работу. И выполненную хорошо.</h3>
+                    <p class="sign-up__desc">Нужен ремонт бытовой техники в тот же день? Мы доступны 24/7, чтобы
+                        ответить на ваши вопросы и решить проблемы с бытовой техникой. Наши специалисты приступают к
+                        ремонту сразу после записи.</p>
+                </div>
+                <div class="appliance">
+                    <div class="appliance__logos">
+                        <img src="./src/icons/appliance/1.png" alt="" class="appliance__logo" width="52px"
+                            height="52px">
+                        <div class="line"></div>
+                        <img src="./src/icons/appliance/2.png" alt="" class="appliance__logo" width="52px"
+                            height="52px">
+                        <div class="line"></div>
+                        <img src="./src/icons/appliance/3.png" alt="" class="appliance__logo" width="52px"
+                            height="52px">
+                        <div class="line"></div>
+                        <img src="./src/icons/appliance/4.png" alt="" class="appliance__logo" width="52px"
+                            height="52px">
+                    </div>
+                    <div class="appliance__items">
+                        <div class="appliance__item">
+                            <h4 class="appliance__title">Запишитесь онлайн или по телефону</h4>
+                            <p class="appliance__desc">Мы всегда на связи.</p>
+                        </div>
+                        <div class="appliance__item">
+                            <h4 class="appliance__title">Мы определяем проблему</h4>
+                            <p class="appliance__desc">Как правило поломку можно определить по косвенным признакам.</p>
+                        </div>
+                        <div class="appliance__item">
+                            <h4 class="appliance__title">Приезжает наш специалист</h4>
+                            <p class="appliance__desc">Специалист приезжает в день обращения.</p>
+                        </div>
+                        <div class="appliance__item">
+                            <h4 class="appliance__title">Специалист решает вашу проблему</h4>
+                            <p class="appliance__desc">Все специалист с большим опытом.</p>
+                        </div>
+                    </div>
+                    <button class="appliance__button button">Заказать диагностику</button>
+                </div>
+            </div>
+        </section>
+        <section class="reviews container">
+            <div class="testimonials">
+                <h3 class="testimonials__title">Отзывы</h3>
+                <p class="testimonials__desc">Ознакомьтесь с отзывами о наших услугах по ремонту, установке и обслуживанию. Наши обученные специалисты всегда готовы помочь.</p>
+            </div>
+            <div class="rewieves">
+                <div class="rewievs__item">
+                    <img src="./src/img/Rewievs/1.jpg" alt="" width="600px">
+                </div>
+                <div class="rewievs__item">
+                    <img src="./src/img/Rewievs/2.jpg" alt="" width="600px">
+                </div>
+                <div class="rewievs__item">
+                    <img src="./src/img/Rewievs/3.jpg" alt="" width="600px">
+                </div>
+                <div class="rewievs__item">
+                    <img src="./src/img/Rewievs/4.jpg" alt="" width="600px">
+                </div>
+            </div>
+        </section>
+        <section class="map">
+            <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/org/servisny_tsentr_1/153657543908/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Сервисный центр 1</a><a href="https://yandex.ru/maps/172/ufa/category/computer_repairs_and_services/184105768/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Компьютерный ремонт и услуги в Уфе</a><a href="https://yandex.ru/maps/172/ufa/category/appliance_repair/184108223/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:28px;">Ремонт бытовой техники в Уфе</a><iframe src="https://yandex.ru/map-widget/v1/?ll=55.986823%2C54.751356&mode=poi&poi%5Bpoint%5D=55.992237%2C54.749290&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D153657543908&z=14.61" width="100%" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+        </section>
     </main>
+    <footer class="footer">
+        <h3 class="footer__title" id="contacts">Контакты</h3>
+        <p class="footer__desc">Наши представители службы поддержки клиентов работают круглосуточно, включая выходные и праздники. Если у вас есть какие-либо вопросы, не стесняйтесь звонить нам по указанному номеру. Или оставляйте заявку в форме ниже, мы с Вами свяжемся.</p>
+    </footer>
 </body>
 
 </html>
