@@ -104,6 +104,54 @@ html {
   scroll-behavior: smooth;
 }
 
+.button {
+  background-color: #009999;
+  padding-inline: 30px;
+  padding-block: 15px;
+  color: #fff;
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+
+.button:hover {
+  background-color: #024e4e;
+}
+
+.burger__button {
+  min-width: 34px;
+  height: 34px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 5px;
+  color: #009999;
+  transition: all 0.5s;
+  visibility: hidden;
+  opacity: 0;
+}
+.burger__button.is-active .burger__button_line:first-child {
+  rotate: 45deg;
+  transform-origin: 0;
+  translate: 0.25em -0.1em;
+}
+.burger__button.is-active .burger__button_line:nth-child(2) {
+  rotate: -45deg;
+}
+.burger__button.is-active .burger__button_line:last-child {
+  width: 0;
+}
+.burger__button_line {
+  width: 100%;
+  height: 3px;
+  border-radius: 5px;
+  background-color: currentColor;
+}
+
+.burger__button:hover {
+  color: #FFAB00;
+}
+
 .main {
   position: relative;
 }
@@ -122,6 +170,16 @@ html {
 .header__menu--list {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+.header__menu_item {
+  transition: all 0.5s;
+  display: block;
+}
+.header__menu_item:hover {
+  color: #009999;
+  border-bottom: 2px #009999 solid;
+  transition: all 0.5s;
 }
 
 .hero {
@@ -174,14 +232,6 @@ html {
 .banner_right {
   position: absolute;
   right: 0px;
-}
-
-.button {
-  background-color: #009999;
-  padding-inline: 30px;
-  padding-block: 15px;
-  color: #fff;
-  border-radius: 5px;
 }
 
 .about {
@@ -269,6 +319,7 @@ html {
   background-color: #FFAB00;
   color: #fff;
   text-align: center;
+  padding-bottom: 90px;
 }
 .sign-up__wrapper {
   display: flex;
@@ -418,4 +469,47 @@ html {
 }
 .form .form__adres_input {
   resize: none;
+}
+
+@media (max-width: 800px) {
+  .header__menu_overlay:not(.is-active) {
+    opacity: 0;
+    visibility: hidden;
+    translate: 100%;
+  }
+  .header__menu_overlay.is-active {
+    z-index: 1;
+    position: fixed;
+    inset: 0;
+    padding: 1rem;
+    background-color: #009999;
+    color: #fff;
+    transition-duration: 0.5s;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 3rem;
+  }
+  .header__menu_item:hover {
+    color: #FFAB00;
+    border-bottom: none;
+  }
+  .header__menu--list {
+    flex-direction: column;
+    row-gap: 1rem;
+    font-size: 20px;
+    margin-inline: auto;
+  }
+}
+.burger__button {
+  position: fixed;
+  right: 20px;
+  z-index: 2;
+  color: #FFAB00;
+  visibility: visible;
+  opacity: 1;
+  transition-duration: 0.5s;
+}
+.burger__button:not(.is-active) {
+  position: static;
 }/*# sourceMappingURL=style.css.map */
