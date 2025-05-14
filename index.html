@@ -11,26 +11,29 @@
 </head>
 
 <body>
-    <header class="header container">
-        <div class="header__logo">
-            <img src="./src/icons/free-icon-tools-10222061.webp" width="100px">
+    <header class="header" data-js-header>
+        <div class="container header__container">
+            <div class="header__logo">
+                <img src="./src/icons/free-icon-tools-10222061.webp" width="100px">
+            </div>
+            <div class="header__menu_overlay" data-js-header-overlay>
+                <menu class="header__menu">
+                    <ul class="header__menu--list">
+                        <li class="header__menu_item"><a href="#about">O нас</a></li>
+                        <li class="header__menu_item"><a href="#service">Услуги</a></li>
+                        <li class="header__menu_item"><a href="#sign_up">Как записаться</a></li>
+                        <li class="header__menu_item"><a href="#reviews">Отзывы</a></li>
+                        <li class="header__menu_item"><a href="#contacts">Контакты</a></li>
+                    </ul>
+                </menu>
+            </div>
+            <button class="burger__button visible-mobile" type="button" aria-label="Open menu" title=""
+                data-js-header-burger-button>
+                <span class="burger__button_line"></span>
+                <span class="burger__button_line"></span>
+                <span class="burger__button_line"></span>
+            </button>
         </div>
-        <div class="header__menu_overlay">
-        <menu class="header__menu">
-            <ul class="header__menu--list">
-                <li class="header__menu_item"><a href="#about">O нас</a></li>
-                <li class="header__menu_item"><a href="#service">Услуги</a></li>
-                <li class="header__menu_item"><a href="#sign_up">Как записаться</a></li>
-                <li class="header__menu_item"><a href="#reviews">Отзывы</a></li>
-                <li class="header__menu_item"><a href="#contacts">Контакты</a></li>
-            </ul>
-        </menu>
-        </div>
-        <button class="burger__button visible-mobile" type="button" aria-label="Open menu" title="">
-            <span class="burger__button_line"></span>
-            <span class="burger__button_line"></span>
-            <span class="burger__button_line"></span>
-        </button>
     </header>
     <main class="main">
         <section class="hero">

@@ -12,6 +12,10 @@
 
 html {
     scroll-behavior: smooth;
+
+    &.is-lock {
+        overflow: hidden;
+    }
 }
 
 .button {
@@ -30,21 +34,21 @@ html {
 .burger__button {
     min-width: 34px;
     height: 34px;
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     padding: 8px 5px;
     color: #009999;
-    // background-color: red;
     transition: all 0.5s;
     visibility: hidden;
     opacity: 0;
-    // display: none;
-    
 
     &.is-active {
+
         .burger__button_line {
+            transition: all 0.5s;
+
             &:first-child {
                 rotate: 45deg;
                 transform-origin: 0;
@@ -76,20 +80,34 @@ html {
 .main {
     position: relative;
 }
-
+header{
+    background-color: #fff;
+}
 
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 70px;
-    padding-inline: 10px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 70px;
+        padding-inline: 10px;
+        background-color: #fff;
+    }
 
     &__menu {
         min-width: 600px;
         margin-left: auto;
+
+        &_overlay {
+            transition: all 0.5s;
+            
+        }
 
         &--list {
             display: flex;
@@ -471,55 +489,72 @@ html {
 }
 
 @media (max-width: 800px) {
-    
+
     .header__menu_overlay {
-        &:not(.is-active){
+        &:not(.is-active) {
             opacity: 0;
             visibility: hidden;
             translate: 100%;
+            transition: all 0.5s;
         }
-        &.is-active{
-        z-index: 1;
-        position: fixed;
-        inset: 0;
-        padding: 1rem;
-        background-color: #009999;
-        color: #fff;
-        transition-duration: 0.5s;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        row-gap: 3rem;        
-    }
+
+        &.is-active {
+            z-index: 1;
+            position: fixed;
+            inset: 0;
+            padding: 1rem;
+            background-color: #009999;
+            color: #fff;
+            transition-duration: 0.5s;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            row-gap: 3rem;
+            // transition: all 0.5s;     
+        }
     }
 
-    
+
 
     .header__menu_item:hover {
         color: #FFAB00;
         border-bottom: none;
+        transition: all 0.5s;
+    }
+
+    .header__menu{
+        text-align: center;
     }
 
     .header__menu--list {
         flex-direction: column;
         row-gap: 1rem;
         font-size: 20px;
-        margin-inline: auto;
+        padding-right: auto;
+        transition: all 0.5s;
     }
-}
+
 
 
 
     .burger__button {
-        &:not(.is-active){
-            position: static;
+        &:not(.is-active) {
+            // position: static;
+            transition: all 0.5s;
         }
+
         // display: block;
-        position: fixed;
+        &.is-active {
+            color: #FFAB00;
+            transition: all 0.5s;
+        }
+
+        // position: fixed;
         right: 20px;
         z-index: 2;
-        color: #FFAB00;
+
         visibility: visible;
         opacity: 1;
         transition-duration: 0.5s;
     }
+}
