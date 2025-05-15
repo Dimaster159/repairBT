@@ -98,6 +98,7 @@ legend {
 }
 :root {
   font-family: "inter", sans-serif;
+  overflow-x: hidden;
 }
 
 html {
@@ -491,6 +492,380 @@ header {
   resize: none;
 }
 
+@media (max-width: 1100px) {
+  .header__container {
+    height: 65px;
+  }
+  .header__logo {
+    width: 95px;
+  }
+  .header__menu {
+    min-width: 600px;
+  }
+  .hero {
+    height: 670px;
+  }
+  .hero__banner {
+    top: 115px;
+    width: 510px;
+    height: 450px;
+    border-radius: 28px;
+  }
+  .banner__title {
+    margin: 0 55px 18px 55px;
+    line-height: 45px;
+    font-size: 46px;
+  }
+  .banner__desc {
+    margin-inline: 55px;
+    margin-bottom: 23px;
+  }
+  .banner__item {
+    margin-left: 55px;
+    margin-bottom: 15px;
+  }
+  .banner__marker {
+    margin-right: 9px;
+  }
+  .banner__button {
+    margin-left: 55px;
+    margin-top: 14px;
+  }
+  .about {
+    margin-top: 95px;
+  }
+  .about__title {
+    font-size: 38px;
+  }
+  .about__desc {
+    font-size: 17px;
+    padding-block: 28px;
+  }
+  .about__advantages {
+    margin-bottom: 85px;
+  }
+  .advantages__title {
+    padding-block: 18px;
+    font-size: 17px;
+  }
+  .advantages__hero {
+    margin-top: 140px;
+  }
+  .advantages__logo {
+    width: 50px;
+  }
+  .service {
+    padding-top: 145px;
+    width: 940px;
+  }
+  .service__title {
+    font-size: 38px;
+  }
+  .service__logo {
+    width: 150px;
+    height: 155px;
+  }
+  .service__desc {
+    font-size: 17px;
+    margin-block: 28px;
+  }
+  .types-of-services {
+    row-gap: 28px;
+  }
+  .circle {
+    width: 190px;
+    height: 190px;
+    top: -95px;
+  }
+  .line {
+    width: 160px;
+  }
+  .sign-up {
+    margin-top: 140px;
+    padding-bottom: 85px;
+  }
+  .sign-up__logo {
+    width: 175px;
+    top: -87px;
+  }
+  .sign-up__header {
+    padding-top: 150px;
+    width: 890px;
+  }
+  .sign-up__title {
+    font-size: 38px;
+    padding-bottom: 28px;
+  }
+  .sign-up__desc {
+    font-size: 17px;
+    padding-bottom: 58px;
+  }
+  .appliance__logos {
+    padding-bottom: 19px;
+    padding-inline: 50px;
+  }
+  .appliance__items {
+    grid-template-columns: repeat(4, 260px);
+    padding-bottom: 55px;
+  }
+  .appliance__title {
+    font-size: 17px;
+    padding-bottom: 14px;
+  }
+  .reviews {
+    margin-block: 125px;
+  }
+  .testimonials {
+    margin-bottom: 55px;
+  }
+  .testimonials .testimonials__title {
+    font-size: 38px;
+    margin-bottom: 28px;
+  }
+  .testimonials .testimonials__desc {
+    font-size: 17px;
+  }
+  .rewieves {
+    -moz-column-gap: 28px;
+         column-gap: 28px;
+    row-gap: 45px;
+  }
+  .footer__wraper {
+    width: 810px;
+    padding-block: 90px;
+  }
+  .footer__title {
+    font-size: 38px;
+    margin-bottom: 28px;
+  }
+  .footer .footer__desc {
+    font-size: 17px;
+    margin-bottom: 65px;
+  }
+  .map {
+    height: 390px;
+  }
+  .contacts__title {
+    margin-top: 19px;
+    margin-bottom: 14px;
+    font-size: 17px;
+  }
+  .form {
+    gap: 17px;
+    margin-bottom: 19px;
+    margin-top: 55px;
+  }
+  .form .form__name {
+    width: 390px;
+    height: 53px;
+    padding-block: 17px;
+  }
+  .form .form__name_input {
+    padding-left: 19px;
+  }
+  .form .form__number {
+    width: 385px;
+    height: 53px;
+    padding-block: 17px;
+  }
+  .form .form__number_input {
+    padding-left: 19px;
+  }
+  .form .form__adres {
+    grid-area: adres;
+    width: 800px;
+    height: 85px;
+    padding-left: 19px;
+    padding-top: 19px;
+  }
+}
+@media (max-width: 1000px) {
+  .header__container {
+    height: 60px;
+  }
+  .header__logo {
+    width: 90px;
+  }
+  .header__menu--list {
+    width: 580px;
+  }
+  .hero {
+    height: 670px;
+  }
+  .hero__banner {
+    top: 115px;
+    width: 510px;
+    height: 450px;
+    border-radius: 28px;
+  }
+  .banner__title {
+    margin: 0 55px 18px 55px;
+    line-height: 45px;
+    font-size: 46px;
+  }
+  .banner__desc {
+    margin-inline: 55px;
+    margin-bottom: 23px;
+  }
+  .banner__item {
+    margin-left: 55px;
+    margin-bottom: 15px;
+  }
+  .banner__marker {
+    margin-right: 9px;
+  }
+  .banner__button {
+    margin-left: 55px;
+    margin-top: 14px;
+  }
+  .about {
+    margin-top: 95px;
+  }
+  .about__title {
+    font-size: 38px;
+  }
+  .about__desc {
+    font-size: 17px;
+    padding-block: 28px;
+  }
+  .about__advantages {
+    margin-bottom: 85px;
+  }
+  .advantages__title {
+    padding-block: 18px;
+    font-size: 17px;
+  }
+  .advantages__hero {
+    margin-top: 140px;
+  }
+  .advantages__logo {
+    width: 50px;
+  }
+  .service {
+    padding-top: 145px;
+    width: 940px;
+  }
+  .service__title {
+    font-size: 38px;
+  }
+  .service__logo {
+    width: 150px;
+    height: 155px;
+  }
+  .service__desc {
+    font-size: 17px;
+    margin-block: 28px;
+  }
+  .types-of-services {
+    row-gap: 28px;
+  }
+  .circle {
+    width: 190px;
+    height: 190px;
+    top: -95px;
+  }
+  .line {
+    width: 160px;
+  }
+  .sign-up {
+    margin-top: 140px;
+    padding-bottom: 85px;
+  }
+  .sign-up__logo {
+    width: 175px;
+    top: -87px;
+  }
+  .sign-up__header {
+    padding-top: 150px;
+    width: 890px;
+  }
+  .sign-up__title {
+    font-size: 38px;
+    padding-bottom: 28px;
+  }
+  .sign-up__desc {
+    font-size: 17px;
+    padding-bottom: 58px;
+  }
+  .appliance__logos {
+    padding-bottom: 19px;
+    padding-inline: 50px;
+  }
+  .appliance__items {
+    grid-template-columns: repeat(4, 260px);
+    padding-bottom: 55px;
+  }
+  .appliance__title {
+    font-size: 17px;
+    padding-bottom: 14px;
+  }
+  .reviews {
+    margin-block: 125px;
+  }
+  .testimonials {
+    margin-bottom: 55px;
+  }
+  .testimonials .testimonials__title {
+    font-size: 38px;
+    margin-bottom: 28px;
+  }
+  .testimonials .testimonials__desc {
+    font-size: 17px;
+  }
+  .rewieves {
+    -moz-column-gap: 28px;
+         column-gap: 28px;
+    row-gap: 45px;
+  }
+  .footer__wraper {
+    width: 810px;
+    padding-block: 90px;
+  }
+  .footer__title {
+    font-size: 38px;
+    margin-bottom: 28px;
+  }
+  .footer .footer__desc {
+    font-size: 17px;
+    margin-bottom: 65px;
+  }
+  .map {
+    height: 390px;
+  }
+  .contacts__title {
+    margin-top: 19px;
+    margin-bottom: 14px;
+    font-size: 17px;
+  }
+  .form {
+    gap: 17px;
+    margin-bottom: 19px;
+    margin-top: 55px;
+  }
+  .form .form__name {
+    width: 390px;
+    height: 53px;
+    padding-block: 17px;
+  }
+  .form .form__name_input {
+    padding-left: 19px;
+  }
+  .form .form__number {
+    width: 385px;
+    height: 53px;
+    padding-block: 17px;
+  }
+  .form .form__number_input {
+    padding-left: 19px;
+  }
+  .form .form__adres {
+    grid-area: adres;
+    width: 800px;
+    height: 85px;
+    padding-left: 19px;
+    padding-top: 19px;
+  }
+}
 @media (max-width: 800px) {
   .header__menu_overlay:not(.is-active) {
     opacity: 0;
