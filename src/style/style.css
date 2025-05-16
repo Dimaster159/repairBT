@@ -161,6 +161,7 @@ html.is-lock {
 
 .main {
   position: relative;
+  text-align: center;
 }
 
 header {
@@ -169,7 +170,7 @@ header {
 
 .header {
   width: 100%;
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 100;
 }
@@ -214,8 +215,8 @@ header {
   padding-top: 35px;
   position: absolute;
   top: 119px;
-  width: 530px;
-  height: 470px;
+  width: clamp(26.875rem, 25.2818627451rem + 6.5359477124vw, 33.125rem);
+  height: clamp(23.125rem, 21.5318627451rem + 6.5359477124vw, 29.375rem);
   background-color: #fff;
   border-radius: 30px;
 }
@@ -227,7 +228,7 @@ header {
   margin: 0 60px 20px 60px;
   line-height: 50px;
   font-weight: 600;
-  font-size: 48px;
+  font-size: clamp(2.375rem, 2.2156862745rem + 0.6535947712vw, 3rem);
 }
 .banner__desc {
   margin-inline: 60px;
@@ -272,6 +273,8 @@ header {
   display: grid;
   text-align: center;
   margin-bottom: 90px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
@@ -295,8 +298,11 @@ header {
 
 .service {
   padding-top: 150px;
-  width: 950px;
-  margin-inline: auto;
+}
+.service__container {
+  width: 910px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .service__title {
   text-align: center;
@@ -388,6 +394,7 @@ header {
   font-weight: 600;
   padding-bottom: 15px;
 }
+
 .reviews {
   margin-block: 130px;
 }
@@ -407,14 +414,15 @@ header {
   margin-inline: auto;
 }
 
-.rewieves {
+.rewieves__list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   -moz-column-gap: 30px;
        column-gap: 30px;
   row-gap: 50px;
 }
-.rewieves .rewievs__item {
+
+.rewieves__item {
   box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.1);
 }
 
@@ -490,429 +498,4 @@ header {
 }
 .form .form__adres_input {
   resize: none;
-}
-
-@media (max-width: 1100px) {
-  .header__container {
-    height: 65px;
-  }
-  .header__logo {
-    width: 95px;
-  }
-  .header__menu {
-    min-width: 600px;
-  }
-  .hero {
-    height: 670px;
-  }
-  .hero__banner {
-    top: 115px;
-    width: 510px;
-    height: 450px;
-    border-radius: 28px;
-  }
-  .banner__title {
-    margin: 0 55px 18px 55px;
-    line-height: 45px;
-    font-size: 46px;
-  }
-  .banner__desc {
-    margin-inline: 55px;
-    margin-bottom: 23px;
-  }
-  .banner__item {
-    margin-left: 55px;
-    margin-bottom: 15px;
-  }
-  .banner__marker {
-    margin-right: 9px;
-  }
-  .banner__button {
-    margin-left: 55px;
-    margin-top: 14px;
-  }
-  .about {
-    margin-top: 95px;
-  }
-  .about__title {
-    font-size: 38px;
-  }
-  .about__desc {
-    font-size: 17px;
-    padding-block: 28px;
-  }
-  .about__advantages {
-    margin-bottom: 85px;
-  }
-  .advantages__title {
-    padding-block: 18px;
-    font-size: 17px;
-  }
-  .advantages__hero {
-    margin-top: 140px;
-  }
-  .advantages__logo {
-    width: 50px;
-  }
-  .service {
-    padding-top: 145px;
-    width: 900px;
-  }
-  .service__title {
-    font-size: 38px;
-  }
-  .service__logo {
-    width: 150px;
-    height: 155px;
-  }
-  .service__desc {
-    font-size: 17px;
-    margin-block: 28px;
-  }
-  .types-of-services {
-    row-gap: 28px;
-  }
-  .circle {
-    width: 190px;
-    height: 190px;
-    top: -95px;
-  }
-  .line {
-    width: 160px;
-  }
-  .sign-up {
-    margin-top: 140px;
-    padding-bottom: 85px;
-  }
-  .sign-up__logo {
-    width: 175px;
-    top: -87px;
-  }
-  .sign-up__header {
-    padding-top: 150px;
-    width: 890px;
-  }
-  .sign-up__title {
-    font-size: 38px;
-    padding-bottom: 28px;
-  }
-  .sign-up__desc {
-    font-size: 17px;
-    padding-bottom: 58px;
-  }
-  .appliance__logos {
-    padding-bottom: 19px;
-    padding-inline: 50px;
-  }
-  .appliance__items {
-    grid-template-columns: repeat(4, 260px);
-    padding-bottom: 55px;
-  }
-  .appliance__title {
-    font-size: 17px;
-    padding-bottom: 14px;
-  }
-  .reviews {
-    margin-block: 125px;
-  }
-  .testimonials {
-    margin-bottom: 55px;
-  }
-  .testimonials .testimonials__title {
-    font-size: 38px;
-    margin-bottom: 28px;
-  }
-  .testimonials .testimonials__desc {
-    font-size: 17px;
-  }
-  .rewieves {
-    -moz-column-gap: 28px;
-         column-gap: 28px;
-    row-gap: 45px;
-  }
-  .footer__wraper {
-    width: 810px;
-    padding-block: 90px;
-  }
-  .footer__title {
-    font-size: 38px;
-    margin-bottom: 28px;
-  }
-  .footer .footer__desc {
-    font-size: 17px;
-    margin-bottom: 65px;
-  }
-  .map {
-    height: 390px;
-  }
-  .contacts__title {
-    margin-top: 19px;
-    margin-bottom: 14px;
-    font-size: 17px;
-  }
-  .form {
-    gap: 17px;
-    margin-bottom: 19px;
-    margin-top: 55px;
-  }
-  .form .form__name {
-    width: 390px;
-    height: 53px;
-    padding-block: 17px;
-  }
-  .form .form__name_input {
-    padding-left: 19px;
-  }
-  .form .form__number {
-    width: 385px;
-    height: 53px;
-    padding-block: 17px;
-  }
-  .form .form__number_input {
-    padding-left: 19px;
-  }
-  .form .form__adres {
-    grid-area: adres;
-    width: 800px;
-    height: 85px;
-    padding-left: 19px;
-    padding-top: 19px;
-  }
-}
-@media (max-width: 1000px) {
-  .header__container {
-    height: 60px;
-  }
-  .header__logo {
-    width: 90px;
-  }
-  .header__menu--list {
-    width: 580px;
-  }
-  .hero {
-    height: 670px;
-  }
-  .hero__banner {
-    top: 115px;
-    width: 510px;
-    height: 450px;
-    border-radius: 28px;
-  }
-  .banner__title {
-    margin: 0 55px 18px 55px;
-    line-height: 45px;
-    font-size: 46px;
-  }
-  .banner__desc {
-    margin-inline: 55px;
-    margin-bottom: 23px;
-  }
-  .banner__item {
-    margin-left: 55px;
-    margin-bottom: 15px;
-  }
-  .banner__marker {
-    margin-right: 9px;
-  }
-  .banner__button {
-    margin-left: 55px;
-    margin-top: 14px;
-  }
-  .about {
-    margin-top: 95px;
-  }
-  .about__title {
-    font-size: 38px;
-  }
-  .about__desc {
-    font-size: 17px;
-    padding-block: 28px;
-  }
-  .about__advantages {
-    margin-bottom: 85px;
-  }
-  .advantages__title {
-    padding-block: 18px;
-    font-size: 17px;
-  }
-  .advantages__hero {
-    margin-top: 140px;
-  }
-  .advantages__logo {
-    width: 50px;
-  }
-  .service {
-    padding-top: 145px;
-    width: 850px;
-  }
-  .service__title {
-    font-size: 38px;
-  }
-  .service__logo {
-    width: 150px;
-    height: 155px;
-  }
-  .service__desc {
-    font-size: 17px;
-    margin-block: 28px;
-  }
-  .types-of-services {
-    row-gap: 28px;
-  }
-  .circle {
-    width: 190px;
-    height: 190px;
-    top: -95px;
-  }
-  .line {
-    width: 160px;
-  }
-  .sign-up {
-    margin-top: 140px;
-    padding-bottom: 85px;
-  }
-  .sign-up__logo {
-    width: 175px;
-    top: -87px;
-  }
-  .sign-up__header {
-    padding-top: 150px;
-    width: 890px;
-  }
-  .sign-up__title {
-    font-size: 38px;
-    padding-bottom: 28px;
-  }
-  .sign-up__desc {
-    font-size: 17px;
-    padding-bottom: 58px;
-  }
-  .appliance__logos {
-    padding-bottom: 19px;
-    padding-inline: 50px;
-  }
-  .appliance__items {
-    grid-template-columns: repeat(4, 260px);
-    padding-bottom: 55px;
-  }
-  .appliance__title {
-    font-size: 17px;
-    padding-bottom: 14px;
-  }
-  .reviews {
-    margin-block: 125px;
-  }
-  .testimonials {
-    margin-bottom: 55px;
-  }
-  .testimonials .testimonials__title {
-    font-size: 38px;
-    margin-bottom: 28px;
-  }
-  .testimonials .testimonials__desc {
-    font-size: 17px;
-  }
-  .rewieves {
-    -moz-column-gap: 28px;
-         column-gap: 28px;
-    row-gap: 45px;
-  }
-  .footer__wraper {
-    width: 810px;
-    padding-block: 90px;
-  }
-  .footer__title {
-    font-size: 38px;
-    margin-bottom: 28px;
-  }
-  .footer .footer__desc {
-    font-size: 17px;
-    margin-bottom: 65px;
-  }
-  .map {
-    height: 390px;
-  }
-  .contacts__title {
-    margin-top: 19px;
-    margin-bottom: 14px;
-    font-size: 17px;
-  }
-  .form {
-    gap: 17px;
-    margin-bottom: 19px;
-    margin-top: 55px;
-  }
-  .form .form__name {
-    width: 390px;
-    height: 53px;
-    padding-block: 17px;
-  }
-  .form .form__name_input {
-    padding-left: 19px;
-  }
-  .form .form__number {
-    width: 385px;
-    height: 53px;
-    padding-block: 17px;
-  }
-  .form .form__number_input {
-    padding-left: 19px;
-  }
-  .form .form__adres {
-    grid-area: adres;
-    width: 800px;
-    height: 85px;
-    padding-left: 19px;
-    padding-top: 19px;
-  }
-}
-@media (max-width: 800px) {
-  .header__menu_overlay:not(.is-active) {
-    opacity: 0;
-    visibility: hidden;
-    translate: 100%;
-    transition: all 0.5s;
-  }
-  .header__menu_overlay.is-active {
-    z-index: 1;
-    position: fixed;
-    inset: 0;
-    padding: 1rem;
-    background-color: #009999;
-    color: #fff;
-    transition-duration: 0.5s;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    row-gap: 3rem;
-  }
-  .header__menu_item:hover {
-    color: #FFAB00;
-    border-bottom: none;
-    transition: all 0.5s;
-  }
-  .header__menu {
-    text-align: center;
-  }
-  .header__menu--list {
-    flex-direction: column;
-    row-gap: 1rem;
-    font-size: 20px;
-    padding-right: auto;
-    transition: all 0.5s;
-  }
-  .burger__button {
-    right: 20px;
-    z-index: 2;
-    visibility: visible;
-    opacity: 1;
-    transition-duration: 0.5s;
-  }
-  .burger__button:not(.is-active) {
-    transition: all 0.5s;
-  }
-  .burger__button.is-active {
-    color: #FFAB00;
-    transition: all 0.5s;
-  }
 }/*# sourceMappingURL=style.css.map */
